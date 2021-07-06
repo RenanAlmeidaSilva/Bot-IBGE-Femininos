@@ -57,8 +57,8 @@ print(txt)
 """
 
 """
-# cria arquivo nomesFemininos.json de lista dos nomes femininos
+# cria arquivo nomesFemininos - Dev. Laura.json de lista dos nomes femininos
 full = json.dumps(full, sort_keys=True, indent=4, ensure_ascii=True)
-with open('nomesFemininos.json', 'w') as file:
+with open('nomesFemininos - Dev. Laura.json', 'w') as file:
     file.write(full)
 """

@@ -4,7 +4,7 @@ import json
 from aiogram import Bot, Dispatcher, executor, types
 
 
-API_TOKEN = '1808365262:AAEqk_xCHTQsfbOuf_JO4GbLR3R_gY4DplE'    # chave do bot
+API_TOKEN = '1767824178:AAHygBUaINWALSk3UTzUC7Jq4x9YX6N9dmw'    # chave do bot
 
 
 # Configure logging
@@ -82,7 +82,7 @@ async def echo(message: types.Message):
             if ex in n['nome']:
                 txt += f'<b>Nome e Variações:</b> \n<i>{n["nome"]}</i>\n'
                 if n['genero']:
-                    txt += f'\n<b>Genero:</b> \n<i>{n["genero"]}</i>\n'
+                    txt += f'\n<b>Gênero:</b> \n<i>{n["genero"]}</i>\n'
                 if n['freqFem']:
                     txt += f'\n<b>Frequência Fememinina:</b> <i>\n{n["freqFem"]}</i>\n'
                 if n['freqMasc']:
@@ -104,7 +104,7 @@ async def echo(message: types.Message):
             erro = "Desculpe, não encontrei em meus dados. Por favor informe um <b>novo nome</b>."
             await message.answer(erro, parse_mode=types.ParseMode.HTML)
     else:
-        await message.answer("Olá, eu sou o Bot de consulta de nomes femininos, criado para encontrar as informações gerais do valor.\n"
+        await message.answer("Olá, eu sou o Bot de consulta de nomes femininos, criado para encontrar as informações gerais do nome.\n"
                              "No momento você não possui permissão para acessar as informações internas.\n"
                              "Entre em contato com os desenvolvedores.\n"
                              "Para mais informações dos meu criadores digite '/info'")
