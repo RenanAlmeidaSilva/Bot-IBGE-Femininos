@@ -35,7 +35,7 @@ import json
 
 from aiogram import Bot, Dispatcher, executor, types
 
-API_TOKEN = '1844881714:AAHUgvk1ZLPx7jIXb_1ktoTEpBS3VccvaE4'
+API_TOKEN = 'API'
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
